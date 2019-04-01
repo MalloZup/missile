@@ -2,9 +2,26 @@
 
 # missile
 rocketchat-rest-client clojure library
+
 # Description:
 
 Missile is the `clojure` library for rocketchat rest API.
+
+# Usage:
+
+Devel usage
+
+create a `.missile.edn`
+
+with `{:credentials  {:username "my-user-name" :server-url "https://server-url.com" :token "my-token"}}`
+
+Use `lein repl`
+
+And `(missile.channels/list!)` for listing all rocket-chat server channels
+
+# Status:
+
+Under active devel
 
 
 # High-order values:
