@@ -3,13 +3,11 @@
 # missile
 rocketchat-rest-client clojure library
 
-# Description:
-
-Missile is the `clojure` library for rocketchat rest API.
-
 # Usage:
 
-Devel usage
+- Add this library to your project: (instruction coming soon)
+
+- Devel usage:
 
 create a `.missile.edn`
 
