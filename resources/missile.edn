@@ -1,0 +1,1 @@
+{:credentials  {:username "name" :server-url "https://rocketchat-server.com" :token "MY_TOKEN"}}
