@@ -1,8 +1,7 @@
+<p align="center"><img src="/logo/logotype-horizontal.png"></p>
+
 # missile
-
 rocketchat-rest-client clojure library
-
-![logo](IMG_20190330_185543.jpg) 
 # Description:
 
 Missile is the `clojure` library for rocketchat rest API.
