@@ -7,4 +7,4 @@
                          [clj-http "3.9.1"]]
   :main ^:skip-aot missile.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}}
+  :profiles {:uberjar {:aot :all}})
