@@ -3,12 +3,11 @@
 # missile
 rocketchat-rest-client clojure library
 
-
 # Install:
 
 - Add this library to your project (leinigen)
 
-`[missile "0.1.0-SNAPSHOT"]`
+`[missile "0.1.0"]`
 
 (https://clojars.org/missile)
 
