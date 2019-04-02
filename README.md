@@ -17,7 +17,7 @@ rocketchat-rest-client clojure library
 You can choose to Initialize the `missile` library with: 1) a file.edn or 2) user-paramter.
 
 1) from a file:
-`(missile.config/set-config-from-file "path-config-file.edn")`  have a look at (resource for a valid template of the file.
+`(missile.config/set-config-from-file "path-config-file.edn")`  have a look at here for [templatefile](resources/missile.edn)
 
 2) from an input parameter:
 
