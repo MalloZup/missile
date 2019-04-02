@@ -3,32 +3,23 @@
 # missile
 rocketchat-rest-client clojure library
 
-# Usage:
 
-- Add this library to your project: 
+# Install:
+
+- Add this library to your project (leinigen)
 
 `[missile "0.1.0-SNAPSHOT"]`
 
 (https://clojars.org/missile)
 
-In your application:
+## Quickstart:
 
 1) Initialize credential with 
 `(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
 
+*) a function for passing user/pwd is on wip
+
 2) use calls of library like
-`(missile.channels/list!)` for listing all rocket-chat server channels
-
-
-# Devel usage:
-
-create a `.missile.edn`
-
-with `{:credentials  {:username "my-user-name" :server-url "https://server-url.com" :token "my-token"}}`
-
-Use `lein repl`
-
-`(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
 `(missile.channels/list!)` for listing all rocket-chat server channels
 
 # Status:
@@ -56,3 +47,17 @@ https://rocket.chat/docs/developer-guides/rest-api/channels/
 
 - A reminder bot for Rocketchat
 https://github.com/MalloZup/fullrocketmetal
+
+
+# Devel usage:
+
+create a `.missile.edn`
+
+with `{:credentials  {:username "my-user-name" :server-url "https://server-url.com" :token "my-token"}}`
+
+Use `lein repl`
+
+`(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
+`(missile.channels/list!)` for listing all rocket-chat server channels
+
+#
