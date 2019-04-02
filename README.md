@@ -13,6 +13,7 @@ rocketchat-rest-client clojure library
 
 ## Quickstart:
 
+### Setup:
 You can choose to Initialize the `missile` library with: 1) a file.edn or 2) user-paramter.
 
 1) from a file:
@@ -23,10 +24,14 @@ You can choose to Initialize the `missile` library with: 1) a file.edn or 2) use
 `(missile.config/set-config-from-input {:username "foo2" :server-url "myserver" :token "foo"})`
 
 
-*) a function for passing user/pwd is on wip
+### Library:
 
-2) use calls of library like
+use calls of library like
 `(missile.channels/list!)` for listing all rocket-chat server channels
+
+A namespace correspond to the corrispondent `rocketchat` namespace, e.g `clojure` channels reflect `/v1/channels` etc.
+
+See status for a list of supported calls.
 
 # Status:
 
@@ -38,7 +43,7 @@ Supprted calls ordered by namespace
 ### Channel:
 https://rocket.chat/docs/developer-guides/rest-api/channels/
 
-- [x] `/api/v1/channels.list` `(missile.channels/list!)`
+- [x] `/api/v1/channels.list` `(missile.channels/list!)` Return a json object spec. by rocketchat.
 
 
 # High-order values:
