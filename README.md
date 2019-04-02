@@ -32,7 +32,8 @@ Supprted calls ordered by namespace
 ### Channel:
 https://rocket.chat/docs/developer-guides/rest-api/channels/
 
-* `/api/v1/channels.list` -> WIP
+- [x] `/api/v1/channels.list` `(missile.channels/list!)`
+
 
 
 
