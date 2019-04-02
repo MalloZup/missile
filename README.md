@@ -11,7 +11,16 @@ rocketchat-rest-client clojure library
 
 (https://clojars.org/missile)
 
-- Devel usage:
+In your application:
+
+1) Initialize credential with 
+`(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
+
+2) use calls of library like
+`(missile.channels/list!)` for listing all rocket-chat server channels
+
+
+# Devel usage:
 
 create a `.missile.edn`
 
@@ -19,11 +28,21 @@ with `{:credentials  {:username "my-user-name" :server-url "https://server-url.c
 
 Use `lein repl`
 
-And `(missile.channels/list!)` for listing all rocket-chat server channels
+`(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
+`(missile.channels/list!)` for listing all rocket-chat server channels
 
 # Status:
 
 Under active devel
+
+Supprted calls ordered by namespace
+
+
+### Channel:
+https://rocket.chat/docs/developer-guides/rest-api/channels/
+
+* `/api/v1/channels.list` -> WIP
+
 
 
 # High-order values:
