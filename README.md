@@ -63,11 +63,5 @@ https://github.com/MalloZup/fullrocketmetal
 
 create a `.missile.edn`
 
-with `{:credentials  {:username "my-user-name" :server-url "https://server-url.com" :token "my-token"}}`
+Use `lein repl` and have fun
 
-Use `lein repl`
-
-`(missile.config/read-config-file "path-config-file.edn")` loading  credentials (user/server/token)
-`(missile.channels/list!)` for listing all rocket-chat server channels
-
-#
