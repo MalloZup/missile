@@ -13,3 +13,8 @@
     [roomName]
     (let [server-api-endpoint (str (config/server) "/api/v1/channels.info?roomName=" roomName) ]
     ( json/read-str (:body ( client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))))
+
+  ;; not upstream calls but conventional calls.
+  (defn get-channel-id [roomName]
+    (get-in (info roomName) ["channel" "_id"])
+  )
