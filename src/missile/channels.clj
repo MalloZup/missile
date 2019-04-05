@@ -3,13 +3,13 @@
   (:require [missile.config :as config])
   (:require [clojure.data.json :as json]))
 
-  ;; internal/private
-  (defn get-list-channels []
-    "return raw list rocket-chat channels, as defined by clj-http schema"
-    (let [server-api-endpoint (reduce str [(config/server) "/api/v1/channels.list"]) ]
-    (client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))
-
-  ;; public api
   (defn list! []
-  "return a  json object, list of maps containining channel list"
-    (json/read-str (:body (get-list-channels))))
+    "return a list of all rochetchat channels from server"
+    (let [server-api-endpoint (str (config/server) "/api/v1/channels.list") ]
+    ( json/read-str (:body ( client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))))
+
+  (defn info
+    "Retrieves the information about a channel"
+    [roomName]
+    (let [server-api-endpoint (str (config/server) "/api/v1/channels.info?roomName=" roomName) ]
+    ( json/read-str (:body ( client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))))
