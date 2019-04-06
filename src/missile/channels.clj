@@ -9,7 +9,7 @@
     ( json/read-str (:body ( client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))))
 
   (defn info
-    "Retrieves the information about a channel"
+    "Retrieves the information about a channel, given its roomname"
     [roomName]
     (let [server-api-endpoint (str (config/server) "/api/v1/channels.info?roomName=" roomName) ]
     ( json/read-str (:body ( client/get server-api-endpoint { :headers {"X-Auth-Token" (config/token) "X-User-Id" (config/user)}} )))))
