@@ -7,7 +7,7 @@ rocketchat-rest-client clojure library
 
 - Add this library to your project (leinigen)
 
-`[missile "0.1.0"]`
+`[missile "0.1.1"]`
 
 (https://clojars.org/missile)
 
