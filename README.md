@@ -60,6 +60,9 @@ ___
 - A reminder bot for Rocketchat
 https://github.com/MalloZup/fullrocketmetal
 
+- Event-driven, async notification for Jenkins:
+https://github.com/MalloZup/saint-build
+
 
 # Devel usage:
 
