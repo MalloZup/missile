@@ -65,5 +65,5 @@ https://github.com/MalloZup/fullrocketmetal
 
 create a `.missile.edn`
 
-Use `lein repl` and have fun
+Let the REPL GUIDE YOU
 
